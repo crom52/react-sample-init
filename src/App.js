@@ -7,11 +7,11 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <img
+        {/* <img
           src='https://static.cdnlogo.com/logos/r/63/react.svg'
           className='App-logo'
           alt='logo'
-        />
+        /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
