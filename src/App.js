@@ -12,10 +12,7 @@ function App() {
           className='App-logo'
           alt='logo'
         /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        <div><a
           className='App-link'
           href='https://reactjs.org'
           target='_blank'
@@ -23,8 +20,11 @@ function App() {
         >
           Learn React
         </a>
-        <h1> You clicked the button {count} times</h1>
-        <button onClick={incrementCount}>Click Me</button>
+          <h1> You clicked the button {count} times</h1>
+          <button onClick={incrementCount}>Click Me</button>
+        </div>
+
+
       </header>
 
     </div>
