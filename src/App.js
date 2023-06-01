@@ -1,23 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect, React } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-function MENU_ID_001() {
+
+
+function App() {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'development') {
-      // Development mode
-      console.log('Bundle Version:', process.env.REACT_APP_BUNDLE_VERSION);
-      console.log('CSS Version:', process.env.REACT_APP_CSS_VERSION);
-    } else {
-      // Production mode
-      const bundleVersion = window.__BUNDLE_VERSION__;
-      const cssVersion = window.__CSS_VERSION__;
-      console.log('Bundle Version:', bundleVersion);
-      console.log('CSS Version:', cssVersion);
-    }
-  }, []);
 
   return (
     <div className='App'>
@@ -37,8 +27,10 @@ function MENU_ID_001() {
         >
           Learn React
         </a>
+        <Link className='OTHER_MENU' to='/MENU_002'>
+          MENU_002
+        </Link>
       </header>
-
     </div>
   );
   function incrementCount() {
@@ -46,4 +38,4 @@ function MENU_ID_001() {
   }
 }
 
-export default MENU_ID_001;
+export default App;
