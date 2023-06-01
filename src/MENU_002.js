@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Other() {
+function MENU_002() {
   return (
     <div>
       <h2>This is MENU_002</h2>
@@ -9,4 +9,4 @@ function Other() {
   );
 }
 
-export default Other;
+export default MENU_002;

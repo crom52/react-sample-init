@@ -19,6 +19,9 @@ function App() {
           className='App-logo'
           alt='logo'
         />
+        <Link className='App-link' to='/MENU_002'>
+          MENU_002
+        </Link>
         <a
           className='App-link'
           href='https://reactjs.org'
@@ -27,10 +30,8 @@ function App() {
         >
           Learn React
         </a>
-        <Link className='OTHER_MENU' to='/MENU_002'>
-          MENU_002
-        </Link>
       </header>
+
     </div>
   );
   function incrementCount() {
