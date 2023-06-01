@@ -4,7 +4,7 @@ function MENU_002() {
   return (
     <div>
       <h2>This is MENU_002</h2>
-      <Link to='/'>Go back to home</Link>
+      <Link to='/MENU_001'>Go back to home</Link>
     </div>
   );
 }
