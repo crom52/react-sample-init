@@ -25,8 +25,8 @@ function App() {
           className='App-logo'
           alt='logo'
         />
-        <Link className='App-link' to='/MENU_002'>
-          MENU_002
+        <Link className='App-link' to='/MENU_001/action'>
+          Some Action
         </Link>
         <a
           className='App-link'
