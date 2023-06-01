@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useState, useEffect, React } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { useState, React } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
