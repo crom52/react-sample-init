@@ -1,18 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import Action from './Action';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import App from './App';
+
+const componentMappings = {
+  'menu_no=1&menu_id=2': App,
+  'menu_no=1&menu_id=3': Action,
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+function Main() {
+  const location = useLocation();
+
+  const hash = location.hash.slice(1);
+  const ComponentToRender = componentMappings[hash] || null;
+  return ComponentToRender ? <ComponentToRender /> : null;
+}
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='parentMenu/subMenu'>
+    <BrowserRouter>
       <Routes>
-        <Route path='/MENU_001' element={<App />} />
-        <Route path='/MENU_001/action' element={<Action />}></Route>
+        <Route path='/main/*' element={<Main />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 
 function Action() {
+  const location = useLocation();
+  if (!location || !location.hash.includes('menu_no=1&menu_id=3')) {
+    return;
+  }
   return (
     <div>
       <h2>Action</h2>
@@ -10,7 +14,6 @@ function Action() {
           <input type='text' />
         </label>
       </form>
-      <Link to='/MENU_001'>Go back to MENU_001</Link>
     </div>
   );
 }
