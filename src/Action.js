@@ -1,4 +1,4 @@
-import { Navigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Action() {
   const location = useLocation();
