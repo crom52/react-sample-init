@@ -1,15 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import { useState, React } from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  useLocation,
-  Navigate,
-} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import $ from 'jquery';
 
 function App() {
   const [str, setRandomStr] = useState(0);
