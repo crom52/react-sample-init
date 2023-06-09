@@ -211,7 +211,7 @@ module.exports = function (webpackEnv) {
       // filename: isEnvProduction
       //   ? 'static/js/[name].[contenthash:8].js'
       //   : isEnvDevelopment && 'static/js/bundle.js',
-      filename: 'static/js/bundle.js',
+      filename: 'static/dev/v1/js/bundle.js',
       // There are also additional JS chunk files if you use code splitting.
       chunkFilename: isEnvProduction
         ? 'static/js/[name].[contenthash:8].chunk.js'
@@ -628,7 +628,7 @@ module.exports = function (webpackEnv) {
           // Options similar to the same options in webpackOptions.output
           // both options are optional
           // filename: 'static/css/[name].[contenthash:8].css',
-          filename: 'static/css/bundle.css',
+          filename: 'static/dev/v1/css/bundle.css',
           chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
         }),
       // Generate an asset manifest file with the following content:
