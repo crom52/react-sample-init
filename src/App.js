@@ -48,16 +48,14 @@ function App() {
           className='App-logo'
           alt='logo'
         />
-        {/* <Link className='App-link' to='/action'>
-          Some Action
-        </Link> */}
+
         <a
           className='App-link'
-          href='https://reactjs.org'
+          href='http://local.onstove.com:8078/main#menu_no=1&menu_id=3'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Learn React
+          Other menu
         </a>
       </header>
     </div>
