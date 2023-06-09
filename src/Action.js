@@ -13,6 +13,7 @@ function Action() {
           Enter your name:
           <input type='text' />
         </label>
+        <button> Submit</button>
       </form>
     </div>
   );
