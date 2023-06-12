@@ -32,7 +32,10 @@ function App() {
   };
 
   const location = useLocation();
-  if (!location || !location.hash.includes('menu_no=1&menu_id=2')) {
+  if (
+    !location ||
+    !location.hash.includes('menu_no=MENU_NO_001&menu_id=MENU_ID_001')
+  ) {
     return;
   }
   // return (
