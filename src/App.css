@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+.data-grid {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.data-grid th,
+.data-grid td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.data-grid th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.data-grid tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-grid tbody tr:hover {
+  background-color: #eaf6ff;
+}
+
+.data-grid caption {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}

@@ -12,6 +12,7 @@ const componentMappings = {
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 function Main() {
   const location = useLocation();
   const hash = location.hash.slice(1);
