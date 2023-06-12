@@ -8,7 +8,7 @@ import App from './App';
 
 const componentMappings = {
   'menu_no=1&menu_id=2': App,
-  'menu_no=1&menu_id=3': Action,
+  'menu_no=2&menu_id=3': Action,
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
