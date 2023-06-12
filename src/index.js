@@ -11,7 +11,9 @@ const componentMappings = {
   'menu_no=1&menu_id=3': Action,
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById('menu-display-layout')
+);
 
 function Main() {
   const location = useLocation();
