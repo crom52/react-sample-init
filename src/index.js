@@ -7,13 +7,11 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import App from './App';
 
 const componentMappings = {
-  'menu_no=MENU_NO_001&menu_id=MENU_ID_002': App,
-  'menu_no=MENU_NO_001&menu_id=MENU_ID_003': Action,
+  'menu_no=1&menu_id=2': App,
+  'menu_no=1&menu_id=3': Action,
 };
 
-const root = ReactDOM.createRoot(
-  document.getElementById('menu-display-layout')
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Main() {
   const location = useLocation();
