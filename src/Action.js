@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 
 function Action() {
   const location = useLocation();
-  if (!location || !location.hash.includes('menu_no=MENU_NO_002&menu_id=MENU_ID_002')) {
+  if (!location || !location.hash.includes('menu_no=1&menu_id=3')) {
     return;
   }
   return (
